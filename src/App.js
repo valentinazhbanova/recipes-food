@@ -45,8 +45,8 @@ function App() {
         </form>
       </div>
 
-      {myRecipes.map(element => (
-        <MyRecipesComponent 
+      {myRecipes.map((element, index) => (
+        <MyRecipesComponent key={index}
         label={element.recipe.label}
         image={element.recipe.image}
         calories={element.recipe.calories}

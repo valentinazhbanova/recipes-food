@@ -9,8 +9,8 @@ function MyRecipesComponent({label, image, calories, ingredients}) {
             </div>
             <div className="container">
                 <ul className="list">
-                {ingredients.map(ingredient => (
-                <li>
+                {ingredients.map((ingredient, index) => (
+                <li key={index}>
                 <img className="icon" src='https://cdn-icons-png.flaticon.com/512/17/17153.png?w=740&t=st=1676446599~exp=1676447199~hmac=3c4334a4c9916f0cc1ba1b424232d429be37b370d5b16b43ba3f04ed6376e030' alt='check mark'/>
                 {ingredient}</li>
                 ))}
